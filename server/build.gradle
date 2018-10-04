@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+
+//Code to provide us with AT SDK libraries to run our server
+repositories {
+
+    maven {
+        url "http://dl.bintray.com/africastalking/java"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Code to provide us with AT SDK libraries to run our server
+    implementation 'com.africastalking:server:3.0.6'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
