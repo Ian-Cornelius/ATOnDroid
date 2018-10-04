@@ -12,7 +12,7 @@ public class MyServer {
     [This is for testing. Port number can be anything not greater than 65536]
      */
     private static final String userName = "sandbox"; //Sandbox is the testing app
-    private static final String APIKey = "61c18cdc5ddacfe0c118ef708ea7ff7e20ec63eba184ca3d546b94234e9e09e6";
+    private static final String APIKey = ""; //Put your API Key here
 
     //for our server's port. Will use 8080
     private static final int port = 8088;
