@@ -31,6 +31,7 @@ Your server will go live.
 
 Now, the last step. Select app in the dropdown you just used. Click run. 
 Go to your Africa's Talking account, at the bottom left, click launch simulator. Key in the phone number you'll be using, and you're all set!
+
 Now send airtime, make a payment, and send a message.
 
 Don't forget to look at the logcat for output from the app. Select filters, show application only, to just focus on the log cat output. Make sure 
@@ -40,4 +41,6 @@ you have selected error in the drop down. This is where I've placed all logs (ev
 
 How to go prod (production) with the SDK will be updated soon, for those of you who want to go a step further!
 
+## UPDATE!!
 
+I forgot to show you how to make sure your payment code works. Please go to https://account.africastalking.com/apps/sandbox/payments/products, create a product, key in the product name and click submit. Once your product has been created, (you should see your new product in the dashboard), go back to the code, PaymentActivity, and in the CheckoutRequest constructor, key in your product name in place of "AT On Droid".
